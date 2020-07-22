@@ -54,9 +54,14 @@
   
        1. The docker conatiners automatically log to STOUT and STERR, which was can grab with a monitoring stack like EFK.
 
+###   Platform
+
        2. Hashicorp vualt should be implemented to store the username and passwords...
 
        3. Input validation should be implemented for the golang frontend to sanitize the inputs...
+
+
+###   Scaling
 
        4. queueing should be used to store handle the transaction process.
 
