@@ -1,0 +1,5 @@
+#curl -X POST -H 'Content-Type: application/json' -d '{"name":"test user","timestamps":"something"}' http://localhost:5000/insert
+
+
+$postParams = @{name='poweer';timestamps='test'}
+Invoke-WebRequest -Uri http://localhost:5000/insert -UseBasicParsing -Method POST -Body $postParams

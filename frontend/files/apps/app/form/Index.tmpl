@@ -1,0 +1,24 @@
+{{ define "Index" }}
+  {{ template "Header" }}
+    <h2> Database data: </h2>
+    <table border="1">
+      <thead>
+      <tr>
+        <td>ID</td>
+        <td>User</td>
+        <td>Time Stamps </td>
+
+      </tr>
+       </thead>
+       <tbody>
+    {{ range . }}
+      <tr>
+        <td> {{ .Id }} </td>
+        <td> {{ .Name }} </td>
+        <td>{{ .TimeStamps }} </td> 
+      </tr>
+    {{ end }}
+       </tbody>
+    </table>
+  {{ template "Footer" }}
+{{ end }}
