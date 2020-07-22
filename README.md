@@ -16,15 +16,26 @@
 # Deployment
 
    1. Clone the repo to a local folder
+   
       git clone (https://github.com/E-N-G-XOR/Poll_Lap_Api.git)
       
    2. Run deployment command
+   
       docker-compose up --build -d
       
    3. Afer a moments, access the api at: http://localhost:5000
+   
       Should be seeing a nice empty table, the database will be empty, but when we add some data, it will appear here....
       
- 
+# Removal of Deployment.
+   1. Run the following commands...
+   
+      docker rm -f $(docker ps -a -q)
+      docker rmi -f $(docker images -q)
+      docker system prune -a
+      docker volume prune 
+
+
 # Using the Api....
     
     Endpoints :
