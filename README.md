@@ -56,15 +56,15 @@
 
 ###   Platform
 
-       2. Hashicorp vualt should be implemented to store the username and passwords...
+       1. Hashicorp vualt should be implemented to store the username and passwords...
 
-       3. Input validation should be implemented for the golang frontend to sanitize the inputs...
+       2. Input validation should be implemented for the golang frontend to sanitize the inputs...
 
 
 ###   Scaling
 
-       4. queueing should be used to store handle the transaction process.
+       1. queueing should be used to store handle the transaction process.
 
-       5. Scaling in a docker swarm or kubernetes deployment should be used. So we can scale the live systems.... Not included here.
+       2. Scaling in a docker swarm or kubernetes deployment should be used. So we can scale the live systems.... Not included here.
 
  
